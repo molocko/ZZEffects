@@ -1,0 +1,9 @@
+main: io.BM.Main
+name: ZZEffects
+version: 0.1
+description: something
+api-version: '1.20'
+
+commands:
+  btp:
+    description: beauty tp

@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+}
+
+group = 'io.BM'
+version = '0.1'
+
+apply plugin: 'java'
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+repositories {
+    maven {
+        name = 'spigot-repo'
+        url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+    }
+    repositories {
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+    //mavenLocal() // This is needed for CraftBukkit and Spigot.
+}
+
+
+// ...
+
+
+dependencies {
+
+    implementation 'com.github.molocko:ZZDLib:spigot'
+    //implementation 'org.json:json:20200518'
+    compileOnly 'org.spigotmc:spigot-api:1.20.1-R0.1-SNAPSHOT'
+}
+
+
+java {
+    toolchain.languageVersion.set(JavaLanguageVersion.of(17))
+}
