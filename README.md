@@ -1,3 +1,3 @@
-ZZEffects - плагин улучшения вызуала некоторых действий
-В разработке - pre-alpha
-Зависимости - https://github.com/molocko/ZZDLib
+**ZZEffects** - плагин улучшения вызуала некоторых действий  
+В разработке - *pre-alpha*  
+Зависимости - [ZZDLib](https://github.com/molocko/ZZDLib)
